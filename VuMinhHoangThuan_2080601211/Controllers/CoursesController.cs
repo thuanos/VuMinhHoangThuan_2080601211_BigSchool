@@ -28,6 +28,7 @@ namespace VuMinhHoangThuan_2080601211.Controllers
             return View(viewModel);
         }
         // GET: Courses
+        [ValidateAntiForgeryToken]
         [Authorize]
         [HttpPost]
         public ActionResult Create(CourseViewModel viewModel)
